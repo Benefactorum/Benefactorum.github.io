@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.svg" type="image/x-icon" />
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script defer type="text/javascript" src="/assets/js/header.js"></script>
+  {% seo %}
+  {% if jekyll.environment == "production" %}
+  <script defer data-domain="benefactorum.org" src="https://plausible.io/js/script.js"></script>
+  {% endif %}
+</head>
+
+<body>
+  <div class="full-height">
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+  </div>
+</body>
+
+<script defer>
+  {% include js/brevo.js %}
+</script>
+
+</html>

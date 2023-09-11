@@ -1,0 +1,29 @@
+<header>
+  <div class="topnav">
+    <a href='/'>
+      <picture>
+        <source media="(min-width: 378px)" srcset="./assets/images/benefactorum/full-logo.svg">
+        <img src="./assets/images/benefactorum/small-logo.svg" alt="Benefactorum" />
+      </picture>
+
+    </a>
+    <nav>
+      {% for link in site.data.navigation %}
+      <a href="{{ link.url }}" title="{{ link.name }}">{{ link.name }}</a>
+      {% endfor %}
+    </nav>
+    <div class="hamburger-lines" onclick="toggleMenu()">
+      <span class="line line1" id="line1"></span>
+      <span class="line line2" id="line2"></span>
+      <span class="line line3" id="line3"></span>
+    </div>
+    {% if page.url != "/merci.html" %}
+    <a href="/inscription" class="sign-up button">S'inscrire</a>
+    {% endif %}
+  </div>
+  <div class='sandwitch-menu' id="myLinks">
+    {% for link in site.data.navigation %}
+    <a href="{{ link.url }}" title="{{ link.name }}">{{ link.name }}</a>
+    {% endfor %}
+  </div>
+</header>

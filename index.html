@@ -1,1 +1,169 @@
-Bientôt en ligne ...
+---
+title: Benefactorum
+---
+
+<section class="hero">
+  <div class="container">
+    <div class="text-section">
+      <h1>
+        Vous avez le pouvoir de rendre le monde
+        <span class="xxxl">meilleur</span>
+      </h1>
+      <a href="/inscription" class="button">
+        Inscrivez-vous gratuitement
+      </a>
+    </div>
+    <img src="./assets/images/hero_pics/dylan_sauerwein_5oog6pfhd_s_unsplash_1.webp" alt="donateur heureux">
+  </div>
+</section>
+
+<section class="value-offer">
+  <h2>
+    Sur Benefactorum, donnez à
+    <span class="xxl">toutes</span>
+    les associations d’intérêt général qui vous importent !
+  </h2>
+  <div class="charities">
+    {% for charity in site.data.charities %}
+    <a href="{{ charity.website }}" target="_blank" rel="noopener noreferrer" title="{{ charity.name }}">
+      <img src="./assets/images/charities/{{ charity.file }}" alt="{{ charity.name }}">
+    </a>
+    {% endfor %}
+  </div>
+  <h2>
+    Ça n’a jamais été aussi
+    <span class="xxl">facile !</span>
+  </h2>
+  <div class="cards-container">
+    <div class="small-cards-container">
+      <div class="card">
+        <div class="recto">
+          <img src="./assets/images/value-offer/simple.svg" alt="Simple">
+          <p class='xl semi-bold'>Simple</p>
+        </div>
+        <div class="verso">
+          <p>
+            1 plateforme.<br>
+            1 interlocuteur.<br>
+            Tous vos dons.
+          </p>
+          <p>
+            Benefactorum<br>
+            vous accompagne<br>
+            de A à Z.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="recto">
+          <img src="./assets/images/value-offer/en-confiance.svg" alt="En confiance">
+          <p class='xl semi-bold'>En confiance</p>
+        </div>
+        <div class="verso">
+          <p>
+            Benefactorum<br>
+            vous protège<br>
+            des sollicitations indésirables.
+          </p>
+          <p>
+            Votre don est<br>
+            transparent,<br>
+            efficace<br>
+            et sécurisé.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="small-cards-container">
+      <div class="card">
+        <div class="recto">
+          <img src="./assets/images/value-offer/accessible.svg" alt="Accessible">
+          <p class='xl semi-bold'>Accessible</p>
+        </div>
+        <div class="verso">
+          <p>
+            Donnez<br>
+            à partir de 1 €.
+          </p>
+          <p>
+            Gagnez des dons<br>
+            en parrainant<br>
+            vos proches.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="recto">
+          <img src="./assets/images/value-offer/gratifiant.svg" alt="Gratifiant">
+          <p class='xl semi-bold'>Gratifiant</p>
+        </div>
+        <div class="verso">
+          <p>
+            Visualisez<br>
+            votre impact<br>
+            dans le temps.
+          </p>
+          <p>
+            Embarquez dans une<br>
+            expérience de don<br>
+            positive et ludique.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how-it-works">
+  <h2 class="xxl">Comment ça marche ?</h2>
+  <div class="main-content">
+    <div class="steps">
+      <div class="step step-1">
+        <div class="number-step">1</div>
+        <p>Trouvez les assos qui vous correspondent vraiment.</p>
+      </div>
+      <div class="step step-2">
+        <div class="number-step">2</div>
+        <p>Lancez vos dons directement sur Benefactorum.</p>
+      </div>
+      <div class="step step-3">
+        <div class="number-step">3</div>
+        <p>Touchez vos réductions d’impôts, sans prise de tête.</p>
+      </div>
+    </div>
+    <div class="info">
+      <img src="./assets/images/good-idea.svg" alt="Bon à savoir">
+      <p class="xl">1€ de don offert<br>
+        à l’inscription !</p>
+    </div>
+  </div>
+  <a href="/la-plateforme" class="margin-top button">
+    Découvrez la plateforme
+  </a>
+</section>
+
+<section class="non-profit">
+  <h2>Pas de frais, pas de commission sur les dons. Service <span class="xxl">gratuit</span>.</h2>
+  <picture>
+    <source media="(min-width: 615px)" srcset="./assets/images/benefactorum/non-profit-full-logo.svg">
+    <img src="./assets/images/benefactorum/non-profit-small-logo.svg" alt="Benefactorum" />
+  </picture>
+  <a href="/la-mission" class="margin-top button">
+    En savoir plus sur la mission
+  </a>
+</section>
+
+<section class="quote">
+  <picture>
+    <source media="(min-width: 648px)" srcset="./assets/images/quotes/1-full.svg">
+    <source media="(min-width: 362px)" srcset="./assets/images/quotes/1-small.svg">
+    <img src="./assets/images/quotes/1-very-small.svg" />
+  </picture>
+  <a href="/inscription" class="button">
+    Inscrivez-vous gratuitement
+  </a>
+</section>
+
+<script defer>
+  {% include index.js %}
+</script>
