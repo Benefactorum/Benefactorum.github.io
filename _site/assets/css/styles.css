@@ -497,6 +497,12 @@ body .step-2 .number-step {
   background-color: white;
 }
 
+.is404 {
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+}
+
 .faq {
   background-color: white;
   flex-wrap: wrap;

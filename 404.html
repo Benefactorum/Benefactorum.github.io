@@ -1,0 +1,15 @@
+---
+title: Erreur | Benefactorum
+sitemap: false
+---
+<section class="is404">
+  <h1>Cette page n'existe pas.</h1>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    plausible('404', {
+      props: { path: document.location.pathname }
+    });
+  });
+</script>
