@@ -605,6 +605,21 @@ body .step-2 .number-step {
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
 }
+.faq .accordion .accordion-content.flex {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+@media only screen and (max-width: 439px) {
+  .faq .accordion .accordion-content.flex {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+  .faq .accordion .accordion-content.flex a {
+    margin: 32px auto 0px;
+  }
+}
 .faq .accordion .accordion-content p {
   margin: 32px 0;
 }

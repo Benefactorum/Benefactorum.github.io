@@ -713,6 +713,22 @@ body {
       transition: opacity 200ms linear, max-height 200ms linear;
       will-change: opacity, max-height;
 
+      &.flex {
+        display: flex;
+        align-items: center;
+        gap: 64px;
+
+        @media only screen and (max-width: 439px) {
+          flex-wrap: wrap;
+          flex-direction: column-reverse;
+          gap: 0px;
+
+          a {
+            margin: 32px auto 0px;
+          }
+        }
+      }
+
       p {
         margin: 32px 0;
       }
