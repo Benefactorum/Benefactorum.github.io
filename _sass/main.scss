@@ -713,6 +713,10 @@ body {
       transition: opacity 200ms linear, max-height 200ms linear;
       will-change: opacity, max-height;
 
+      a {
+        text-decoration: underline;
+      }
+
       &.flex {
         display: flex;
         align-items: center;

@@ -605,6 +605,9 @@ body .step-2 .number-step {
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
 }
+.faq .accordion .accordion-content a {
+  text-decoration: underline;
+}
 .faq .accordion .accordion-content.flex {
   display: flex;
   align-items: center;
