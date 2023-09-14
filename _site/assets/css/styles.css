@@ -46,7 +46,6 @@ body h1 {
   font-size: 32px;
   font-weight: 800;
   text-align: center;
-  min-width: 304px;
   line-height: 64px;
 }
 body h2 {
@@ -58,6 +57,7 @@ body h2 {
 body h3 {
   font-weight: normal;
   text-align: center;
+  line-height: 32px;
 }
 body h4,
 body p {
@@ -79,6 +79,7 @@ body .xxl {
 }
 body .xxxl {
   font-size: 48px;
+  font-weight: 800;
 }
 body .button {
   display: flex;
@@ -451,11 +452,6 @@ body .step-2 .number-step {
   filter: brightness(0) saturate(100%) invert(35%) sepia(15%) saturate(4488%) hue-rotate(143deg) brightness(99%) contrast(100%);
 }
 
-@media only screen and (min-width: 790px) {
-  .mission .hero {
-    height: 393px;
-  }
-}
 .mission .values {
   background-color: white;
   flex-direction: column;
@@ -640,10 +636,11 @@ body .step-2 .number-step {
 .hero .container .text-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 64px;
-  flex: 1 0 0;
+}
+.hero .container img {
+  max-width: 100%;
 }
 
 header {
