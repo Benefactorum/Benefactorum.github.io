@@ -506,7 +506,6 @@ body .step-2 .number-step {
 .faq {
   background-color: white;
   flex-wrap: wrap;
-  flex: 1 1 auto;
 }
 .faq .container {
   margin: 0 auto;
