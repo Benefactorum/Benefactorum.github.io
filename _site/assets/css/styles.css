@@ -200,7 +200,6 @@ body .step-2 .number-step {
 }
 
 .non-profit {
-  background-color: white;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -213,6 +212,9 @@ body .step-2 .number-step {
   width: 100%;
   max-width: 599px;
   min-width: 312px;
+}
+.non-profit.white {
+  background-color: white;
 }
 
 .how-it-really-works {
@@ -338,6 +340,7 @@ body .step-2 .number-step {
 }
 
 .how-it-works {
+  background-color: white;
   flex-direction: column;
   align-items: center;
 }
@@ -378,7 +381,7 @@ body .step-2 .number-step {
   align-items: center;
   gap: 16px;
   border-radius: 32px;
-  background: white;
+  background: #F1F3F3;
 }
 .how-it-works .main-content .info p {
   text-align: center;
@@ -641,6 +644,9 @@ body .step-2 .number-step {
 }
 .hero .container img {
   max-width: 100%;
+}
+.hero .container img.colibri {
+  border-radius: 27px;
 }
 
 header {
