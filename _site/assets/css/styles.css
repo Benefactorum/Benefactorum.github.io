@@ -475,6 +475,9 @@ body .step-2 .number-step {
     flex-wrap: wrap;
   }
 }
+.mission .values .main p {
+  max-width: 920px;
+}
 .mission .values .main ul {
   display: flex;
   flex-direction: column;

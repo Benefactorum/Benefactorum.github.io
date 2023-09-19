@@ -234,7 +234,6 @@ body {
 .confidentialite {
   flex-direction: column;
   padding: 0 64px;
-  // max-width: 1536px;
   justify-content: center;
 }
 
@@ -553,6 +552,10 @@ body {
 
       @media only screen and (max-width: 627px) {
         flex-wrap: wrap;
+      }
+
+      p {
+        max-width: 920px;
       }
 
       ul {
