@@ -56,7 +56,7 @@ body {
 
   h1 {
     font-size: 32px;
-    font-weight: 800;
+    font-weight: normal;
     text-align: center;
     line-height: 64px;
   }
@@ -80,6 +80,11 @@ body {
     line-height: 24px;
   }
 
+  .xs {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
   section {
     display: flex;
     padding: 64px 8px;
@@ -94,6 +99,7 @@ body {
   .xxl {
     font-size: 32px;
     line-height: 48px;
+    font-weight: 800;
   }
 
   .xxxl {
