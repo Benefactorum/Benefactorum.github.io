@@ -1,8 +1,94 @@
----
-title: La plateforme | Benefactorum
----
+<!doctype html>
+<html lang="fr">
 
-<section class="hero">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.svg" type="image/x-icon" />
+  <title>Le concept | Benefactorum</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Benefactorum, la plateforme des donateurs" />
+  <meta name="description" content="Benefactorum est la première plateforme de dons collaborative et à but non-lucratif, qui vous permet de découvrir et de soutenir facilement toutes les causes qui vous tiennent à coeur !" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://benefactorum.org" />
+  <meta property="og:title" content="Benefactorum, la plateforme des donateurs" />
+  <meta property="og:description" content="Benefactorum est la première plateforme de dons collaborative et à but non-lucratif, qui vous permet de découvrir et de soutenir facilement toutes les causes qui vous tiennent à coeur !" />
+  <meta property="og:image" content="./assets/images/benefactorum/meta-tag.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://benefactorum.org" />
+  <meta property="twitter:title" content="Benefactorum, la plateforme des donateurs" />
+  <meta property="twitter:description" content="Benefactorum est la première plateforme de dons collaborative et à but non-lucratif, qui vous permet de découvrir et de soutenir facilement toutes les causes qui vous tiennent à coeur !" />
+  <meta property="twitter:image" content="./assets/images/benefactorum/meta-tag.png" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "description": "Benefactorum est la première plateforme de dons collaborative et à but non-lucratif, qui vous permet de découvrir et de soutenir facilement toutes les causes qui vous tiennent à coeur !",
+      "headline": "Benefactorum, la plateforme des donateurs",
+      "publisher": {
+        "@type":"Organization",
+        "logo": {
+          "@type":"ImageObject",
+          "url":"./assets/images/benefactorum/meta-tag.png"
+        }
+      },
+      "url":"https://benefactorum.org"
+    }
+  </script>
+  
+  <script defer type="text/javascript" src="/assets/js/header.js"></script>
+  
+</head>
+
+<body>
+  <div class="full-height">
+    <header>
+  <div class="topnav">
+    <a href='/'>
+      <picture>
+        <source media="(min-width: 378px)" srcset="./assets/images/benefactorum/full-logo.svg">
+        <img src="./assets/images/benefactorum/small-logo.svg" alt="Benefactorum" />
+      </picture>
+
+    </a>
+    <nav>
+      
+      <a href="/la-mission" title="La mission">La mission</a>
+      
+      <a href="/le-concept" title="Le concept">Le concept</a>
+      
+      <a href="/faq" title="FAQ">FAQ</a>
+      
+    </nav>
+    <div class="hamburger-lines" onclick="toggleMenu()">
+      <span class="line line1" id="line1"></span>
+      <span class="line line2" id="line2"></span>
+      <span class="line line3" id="line3"></span>
+    </div>
+    
+    <a href="/inscription" class="sign-up button" title="S'inscrire à notre newsletter !">S'inscrire</a>
+    
+  </div>
+  <div class='sandwitch-menu' id="myLinks">
+    
+    <a href="/la-mission" title="La mission">La mission</a>
+    
+    <a href="/le-concept" title="Le concept">Le concept</a>
+    
+    <a href="/faq" title="FAQ">FAQ</a>
+    
+  </div>
+</header>
+
+    <section class="hero">
   <div class="container">
     <div class="text-section">
       <h1>
@@ -178,3 +264,61 @@ title: La plateforme | Benefactorum
     Inscrivez-vous à notre newsletter !
   </a>
 </section>
+
+    <footer>
+  <div class="container">
+    <div class="nav-links">
+      <a href="/">
+        <img src="./assets/images/benefactorum/small-logo-white.svg" alt="Benefactorum"></img>
+      </a>
+      <div class="menu">
+        
+        <a href="/la-mission" title="La mission">La mission</a>
+        
+        <a href="/le-concept" title="Le concept">Le concept</a>
+        
+        <a href="/faq" title="FAQ">FAQ</a>
+        
+        <a href="mailto:contact@benefactorum.org">Contact</a>
+      </div>
+      <div class="socials">
+        <a href="https://www.linkedin.com/company/benefactorum/" target="_blank" rel="noopener noreferrer">
+          <img class='reseau' src="./assets/images/socials/linkedin.svg" alt="Linkedin"></img>
+        </a>
+        <a href="https://www.facebook.com/benefactorum/" target="_blank" rel="noopener noreferrer">
+          <img class='reseau' src="./assets/images/socials/facebook.svg" alt="Facebook"></img>
+        </a>
+        <a href="https://github.com/Benefactorum" target="_blank" rel="noopener noreferrer">
+          <img class='reseau' src="./assets/images/socials/github.svg" alt="Github"></img>
+        </a>
+      </div>
+    </div>
+    <div class="legal-links">
+      2023
+      -
+      <a href="#mentions-legales" rel="nofollow">Mentions légales</a>
+      -
+      <a href="/politique-de-confidentialite" rel="nofollow">Données personnelles</a>
+
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+<script defer>
+  (function (d, w, c) {
+  w.BrevoConversationsID = '64e778320357374b94750b0a';
+  w[c] = w[c] || function () {
+    (w[c].q = w[c].q || []).push(arguments);
+  };
+  var s = d.createElement('script');
+  s.async = true;
+  s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+  if (d.head) d.head.appendChild(s);
+})(document, window, 'BrevoConversations');
+
+</script>
+
+</html>
