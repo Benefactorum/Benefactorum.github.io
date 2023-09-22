@@ -190,10 +190,10 @@ body .step .number-step {
 }
 body .step-2 {
   background-color: #008080;
-  color: #F1F3F3;
+  color: white;
 }
 body .step-2 .number-step {
-  color: #F1F3F3;
+  color: white;
 }
 
 .quote {
