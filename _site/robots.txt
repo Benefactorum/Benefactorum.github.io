@@ -1,1 +1,1 @@
-Sitemap: https://benefactorum.org//sitemap.xml
+Sitemap: https://benefactorum.org/sitemap.xml

@@ -9,5 +9,5 @@ plugins:
 
 title: Benefactorum, la plateforme des donateurs
 description: Benefactorum est la première plateforme de dons collaborative et à but non-lucratif, qui vous permet de découvrir et de soutenir facilement toutes les causes qui vous tiennent à coeur !
-url: https://benefactorum.org/
+url: https://benefactorum.org
 logo: ./assets/images/benefactorum/meta-tag.png
